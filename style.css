@@ -1,0 +1,389 @@
+@font-face {
+    font-family: DMSans;
+    src: url(fonts/DMSans.ttf);
+}
+
+@font-face {
+    font-family: FireSans;
+    src: url(fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: FireSansBold;
+    src: url(fonts/FiraSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat.ttf);
+}
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.guzik {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 130px;
+    height: 50px;
+    background: #ff8c00;
+    color: #fdf6ea;
+    font-family: DMSans;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.guzik:hover {
+    background: #ff9d1f;
+}
+
+.logo {
+    width: 175px;
+}
+
+.duzy {
+    width: 400px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background: #fdf6ea;
+    padding: 0 8px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+#front {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#front video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#Pierwszy_napis {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#Pierwszy_napis h1 {
+    font-family: FireSans;
+    font-size: 72px;
+}
+
+#Pierwszy_napis span {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.SekcjeDalsze {
+    min-height: 100vh;
+    padding: 50px;
+}
+
+#JakPodrozowac {
+    background: #fdf6ea;
+}
+
+#JakPodrozowac video {
+    width: 90%;
+}
+
+.ikona {
+    width: 50px;
+}
+
+#JakPodrozowac h1 {
+    font-family: FireSansBold;
+    font-size: 48px;
+}
+
+#JakPodrozowac p {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+#JakPodrozowac video {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#MojePodroze {
+    text-align: center;
+    background: #504128;
+}
+
+#MojeZimowePodroze {
+    text-align: left;
+    background: #fdf6ea;
+    padding-top: 0;
+}
+
+#MojeZimowePodroze img {
+    width: 90%;
+    height: 100%;
+}
+
+#MojePodroze h1 {
+    font-family: FireSansBold;
+    color: #fdf6ea;
+    font-size: 48px;
+}
+
+#Zdjecia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 65vh;
+    gap: 10px;
+}
+
+#Zdjecia img {
+    width: 100%; 
+    height: 50%;
+}
+
+#Zdjecia div {
+    font-family: FireSans;
+    background: linear-gradient(to bottom,
+            #fdf6ea 50%,
+            #504128 100%);
+}
+
+#Zdjecia h2 {
+    font-family: FireSansBold;
+    font-size: 21px;
+}
+
+#Zdjecia span {
+    font-size: 21px;
+}
+
+#KontenerGuzik button {
+    font-size: 20px;
+    width: 400px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+#KontenerGuzik {
+    display: flex;
+    height: 100px;
+    align-items: end;
+    justify-content: center;
+}
+
+#Statystyki {
+    background: #fdf6ea;
+    min-height: 70vh;
+    padding: 50px;
+}
+
+#Statystyki img {
+    width: 30%; 
+    height: 30%;
+}
+
+#wyspa {
+    width: 15% !important;
+    height: 15% !important;
+}
+
+#Statystyki h1 {
+    text-align: center;
+    font-family: FireSansBold;
+    font-size: 48px;
+}
+
+#Statystyki td > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#Statystyki h3 {
+    font-family: FireSansBold;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+#Statystyki p, #Statystyki span {
+    font-family: Montserrat;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+#MojeZimowePodroze > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 45vh);
+    gap: 10px;
+}
+
+#MojeZimowePodroze > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#MojeZimowePodroze h2 {
+    font-family: FireSansBold;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#MojeZimowePodroze span {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+#MojeZimowePodroze img {
+    object-fit: cover;
+}
+
+#MojeZimowePodroze h1 {
+    font-family: FireSans;
+    color: black;
+    font-size: 48px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#kontakt {
+    background: #504128;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+#kontakt main {
+    flex:1;
+}
+
+#kontakt h2, #kontakt p {
+    color: #fdf6ea;
+}
+
+#kontakt h2 {
+    margin-bottom: 0;
+}
+
+#kontakt .container {
+    width: 600px;
+    max-width: 90%;
+    margin: auto;
+    background: #dcd3c7;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 0 0 3px #ff8c00;
+    text-align: left;
+}
+
+#kontakt label {
+    display: block;
+    margin-top: 12px;
+    font-family: FireSans;
+}
+
+#kontakt input, #kontakt textarea {
+    width: 97%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    margin-top: 5px;
+}
+
+#kontakt textarea {
+    height: 90px;
+    resize: none;
+}
+
+#kontakt .option {
+    background: #cfc6bb;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#kontakt .option:hover {
+    background: #c2b9ae;
+}
+
+#kontakt #Wyslij {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #ff8c00;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#kontakt .small {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+footer {
+    background: #504128;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    color: #fdf6ea;
+}
+
+footer #centrum {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer #dol {
+    margin-top: auto;
+}
+
+footer h2 {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+footer span {
+    font-family: Montserrat;
+    font-size: 18px;
+}
